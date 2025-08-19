@@ -203,6 +203,6 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE and MIT License - 
 
 [Testing the Discount Code System](Docs\Testing%20the%20DiscountCode%20System.md)
 
-[.NET Principles and Design Patterns in Discount Code System](Docs\.NET%20Principles%20and%20Design%20Patterns%20in%20Discount%20Code%20System.md)
+[.NET Principles and Design Patterns in Discount Code System](Docs/.NET%20Principles%20and%20Design%20Patterns%20in%20Discount%20Code%20System.md)
 
 -------------------------------------------------- NOTHING FOLLOWS --------------------------------------------------
