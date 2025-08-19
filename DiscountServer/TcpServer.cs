@@ -57,32 +57,32 @@ public class TcpServer
             {
                 // Read message type (1 byte)
                 var messageType = reader.ReadByte();
-                
+
                 if (messageType == 1) // Generate codes
                 {
                     // Read count (ushort)
                     var count = reader.ReadUInt16();
-                    
+
                     // Read length (byte)
                     var length = reader.ReadByte();
-                    
+
                     // Process request
                     var response = await _discountService.GenerateCodesAsync(count, length);
-                    
+
                     // Write response
                     writer.Write(response.Result);
-                    
+
                     if (response.Result)
                     {
                         // Write number of codes
                         writer.Write((ushort)response.Codes.Count);
-                        
+
                         // Write each code
                         foreach (var code in response.Codes)
                         {
                             // Write code length (byte)
                             writer.Write((byte)code.Length);
-                            
+
                             // Write code as bytes
                             writer.Write(Encoding.UTF8.GetBytes(code));
                         }
@@ -92,14 +92,14 @@ public class TcpServer
                 {
                     // Read code length (byte)
                     var codeLength = reader.ReadByte();
-                    
+
                     // Read code as bytes
                     var codeBytes = reader.ReadBytes(codeLength);
                     var code = Encoding.UTF8.GetString(codeBytes);
-                    
+
                     // Process request
                     var response = await _discountService.UseCodeAsync(code);
-                    
+
                     // Write response
                     writer.Write(response.Result);
                 }
@@ -108,8 +108,10 @@ public class TcpServer
                     Console.WriteLine($"Unknown message type: {messageType}");
                     break;
                 }
-                
+
                 writer.Flush();
+                
+                await stream.FlushAsync().ConfigureAwait(false);
             }
         }
         catch (Exception ex)
