@@ -198,5 +198,9 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE and MIT License - 
 
 ## Other related documents:
 [Steps - How this application was created](Docs\Steps%20-%20How%20this%20application%20was%20created.md)
+
 [Discount Code System Requirements Compliance](Docs\Discount%20Code%20System%20Requirements%20Compliance.md)
+
 [Testing the Discount Code System](Docs\Testing%20the%20DiscountCode%20System.md)
+
+-------------------------------------------------- NOTHING FOLLOWS --------------------------------------------------
