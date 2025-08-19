@@ -192,7 +192,7 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE and MIT License - 
 
 ## Acknowledgments
 
-- Built with .NET 5
+- Built with .NET 9.0
 - Uses SQLite for persistent storage
 - Implements a custom TCP protocol
 
