@@ -2,29 +2,46 @@
 {
     public class DiscountServiceTests : IDisposable
     {
+        private readonly string _tempDir;
         private readonly string _tempDb;
         private readonly DatabaseRepository _repository;
         private readonly DiscountService _service;
 
         public DiscountServiceTests()
         {
-            // Create a unique temp database for each test instance
-            _tempDb = Path.GetTempFileName();
+            // Create a unique temp directory for each test instance
+            _tempDir = Path.Combine(Path.GetTempPath(), $"DiscountTest_{Guid.NewGuid()}");
+            Directory.CreateDirectory(_tempDir);
+            _tempDb = Path.Combine(_tempDir, "test.db");
             _repository = new DatabaseRepository(_tempDb);
             _service = new DiscountService(_repository);
         }
 
         public void Dispose()
         {
-            // Ensure all connections are closed before deleting
+            // Dispose the repository first
             _repository.Dispose();
+            
+            // Force garbage collection to clean up any remaining connections
             GC.Collect();
             GC.WaitForPendingFinalizers();
             
-            // Now safely delete the file
-            if (File.Exists(_tempDb))
+            // Try to delete the temp directory with retries
+            for (int i = 0; i < 5; i++)
             {
-                File.Delete(_tempDb);
+                try
+                {
+                    if (Directory.Exists(_tempDir))
+                    {
+                        Directory.Delete(_tempDir, true);
+                    }
+                    break;
+                }
+                catch (IOException)
+                {
+                    // Wait and retry
+                    Thread.Sleep(100 * (i + 1));
+                }
             }
         }
 

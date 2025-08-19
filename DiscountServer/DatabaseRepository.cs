@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 public class DatabaseRepository : IDisposable
 {
     private readonly string _connectionString;
-    private bool _disposed;
+    private bool _disposed = false;
 
     public DatabaseRepository(string dbPath)
     {
-        _connectionString = $"Data Source={dbPath}";
+        _connectionString = $"Data Source={dbPath};Mode=ReadWriteCreate;Pooling=false";
         InitializeDatabase();
     }
 
@@ -31,7 +31,7 @@ public class DatabaseRepository : IDisposable
 
     public async Task<bool> CodeExistsAsync(string code)
     {
-        using var connection = new SqliteConnection(_connectionString);
+        await using var connection = new SqliteConnection(_connectionString);
         await connection.OpenAsync();
         
         var command = connection.CreateCommand();
@@ -44,7 +44,7 @@ public class DatabaseRepository : IDisposable
 
     public async Task<bool> InsertCodeAsync(string code)
     {
-        using var connection = new SqliteConnection(_connectionString);
+        await using var connection = new SqliteConnection(_connectionString);
         await connection.OpenAsync();
         
         var command = connection.CreateCommand();
@@ -59,17 +59,15 @@ public class DatabaseRepository : IDisposable
         }
         catch (SqliteException)
         {
-            // Code already exists (primary key violation)
             return false;
         }
     }
 
     public async Task<byte> UseCodeAsync(string code)
     {
-        using var connection = new SqliteConnection(_connectionString);
+        await using var connection = new SqliteConnection(_connectionString);
         await connection.OpenAsync();
         
-        // Check if code exists
         var checkCommand = connection.CreateCommand();
         checkCommand.CommandText = "SELECT IsUsed FROM DiscountCodes WHERE Code = @code";
         checkCommand.Parameters.AddWithValue("@code", code);
@@ -77,29 +75,31 @@ public class DatabaseRepository : IDisposable
         var result = await checkCommand.ExecuteScalarAsync();
         if (result == null)
         {
-            return 1; // Code not found
+            return 1;
         }
         
         bool isUsed = Convert.ToBoolean(result);
         if (isUsed)
         {
-            return 2; // Code already used
+            return 2;
         }
         
-        // Mark code as used
         var updateCommand = connection.CreateCommand();
         updateCommand.CommandText = "UPDATE DiscountCodes SET IsUsed = 1 WHERE Code = @code";
         updateCommand.Parameters.AddWithValue("@code", code);
         await updateCommand.ExecuteNonQueryAsync();
-        return 0; // Success
+        
+        return 0;
     }
 
     public void Dispose()
     {
         if (!_disposed)
         {
+            // Force garbage collection to clean up any remaining connections
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
             _disposed = true;
         }
-        GC.SuppressFinalize(this);
     }
-}   
+}
