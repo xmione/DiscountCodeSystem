@@ -1,0 +1,14 @@
+C:\repo\DiscountCodeSystem\DiscountClient\bin\x64\Debug\net9.0\DiscountClient.exe
+C:\repo\DiscountCodeSystem\DiscountClient\bin\x64\Debug\net9.0\DiscountClient.deps.json
+C:\repo\DiscountCodeSystem\DiscountClient\bin\x64\Debug\net9.0\DiscountClient.runtimeconfig.json
+C:\repo\DiscountCodeSystem\DiscountClient\bin\x64\Debug\net9.0\DiscountClient.dll
+C:\repo\DiscountCodeSystem\DiscountClient\bin\x64\Debug\net9.0\DiscountClient.pdb
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\DiscountClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\DiscountClient.AssemblyInfoInputs.cache
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\DiscountClient.AssemblyInfo.cs
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\DiscountClient.csproj.CoreCompileInputs.cache
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\DiscountClient.dll
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\refint\DiscountClient.dll
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\DiscountClient.pdb
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\DiscountClient.genruntimeconfig.cache
+C:\repo\DiscountCodeSystem\DiscountClient\obj\x64\Debug\net9.0\ref\DiscountClient.dll
