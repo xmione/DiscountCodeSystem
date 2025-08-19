@@ -90,6 +90,8 @@ dotnet restore
    - Prompt you to enter a code to test
    - Test code usage (first use should succeed, second should fail)
 
+### Testing with xUnit
+- See [Testing the Discount Code System](Docs/Testing%20the%20Discount%20Code%20System.md).
 ## API Protocol
 
 The server uses a custom TCP protocol with binary messages:
