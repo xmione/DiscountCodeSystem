@@ -2,9 +2,10 @@ using Microsoft.Data.Sqlite;
 using System;
 using System.Threading.Tasks;
 
-public class DatabaseRepository
+public class DatabaseRepository : IDisposable
 {
     private readonly string _connectionString;
+    private bool _disposed;
 
     public DatabaseRepository(string dbPath)
     {
@@ -90,7 +91,15 @@ public class DatabaseRepository
         updateCommand.CommandText = "UPDATE DiscountCodes SET IsUsed = 1 WHERE Code = @code";
         updateCommand.Parameters.AddWithValue("@code", code);
         await updateCommand.ExecuteNonQueryAsync();
-        
         return 0; // Success
     }
-}
+
+    public void Dispose()
+    {
+        if (!_disposed)
+        {
+            _disposed = true;
+        }
+        GC.SuppressFinalize(this);
+    }
+}   

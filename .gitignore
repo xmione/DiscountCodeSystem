@@ -2,3 +2,8 @@ DiscountClient/bin
 DiscountClient/obj
 DiscountServer/bin
 DiscountServer/obj
+DiscountServer.Tests/bin
+DiscountServer.Tests/obj
+DiscountCodeSystem.Tests/bin
+DiscountCodeSystem.Tests/obj
+

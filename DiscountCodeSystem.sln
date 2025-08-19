@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountServer", "DiscountS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountClient", "DiscountClient\DiscountClient.csproj", "{115C1FC7-5780-4873-A334-174273BA3A3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountServer.Tests", "DiscountServer.Tests\DiscountServer.Tests.csproj", "{6BAC2514-8AA7-4B00-A12D-9A34D648BFB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountCodeSystem.Tests", "DiscountCodeSystem.Tests\DiscountCodeSystem.Tests.csproj", "{4C2A2140-841E-4E20-B13B-FC18C9DDEAB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{115C1FC7-5780-4873-A334-174273BA3A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{115C1FC7-5780-4873-A334-174273BA3A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{115C1FC7-5780-4873-A334-174273BA3A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BAC2514-8AA7-4B00-A12D-9A34D648BFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BAC2514-8AA7-4B00-A12D-9A34D648BFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BAC2514-8AA7-4B00-A12D-9A34D648BFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BAC2514-8AA7-4B00-A12D-9A34D648BFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2A2140-841E-4E20-B13B-FC18C9DDEAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2A2140-841E-4E20-B13B-FC18C9DDEAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2A2140-841E-4E20-B13B-FC18C9DDEAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2A2140-841E-4E20-B13B-FC18C9DDEAB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

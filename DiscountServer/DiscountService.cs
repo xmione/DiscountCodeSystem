@@ -17,7 +17,7 @@ public class DiscountService
     public async Task<GenerateResponse> GenerateCodesAsync(ushort count, byte length)
     {
         // Validate input
-        if (count > 2000)
+        if (count == 0 || count > 2000)
         {
             return new GenerateResponse { Result = false };
         }
