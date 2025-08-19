@@ -198,11 +198,11 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE and MIT License - 
 - Implements a custom TCP protocol
 
 ## Other related documents:
-[Steps - How this application was created](Docs\Steps%20-%20How%20this%20application%20was%20created.md)
+[Steps - How this application was created](Docs/Steps%20-%20How%20this%20application%20was%20created.md)
 
-[Discount Code System Requirements Compliance](Docs\Discount%20Code%20System%20Requirements%20Compliance.md)
+[Discount Code System Requirements Compliance](Docs/Discount%20Code%20System%20Requirements%20Compliance.md)
 
-[Testing the Discount Code System](Docs\Testing%20the%20DiscountCode%20System.md)
+[Testing the Discount Code System](Docs/Testing%20the%20DiscountCode%20System.md)
 
 [.NET Principles and Design Patterns in Discount Code System](Docs/.NET%20Principles%20and%20Design%20Patterns%20in%20Discount%20Code%20System.md)
 
