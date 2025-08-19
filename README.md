@@ -92,6 +92,26 @@ dotnet restore
 
 ### Testing with xUnit
 - See [Testing the Discount Code System](Docs/Testing%20the%20Discount%20Code%20System.md).
+
+### From Command Line
+
+```bash
+# Navigate to the test project directory
+cd DiscountCodeSystem.Tests
+
+# Run all tests
+dotnet test
+
+# Run specific project
+dotnet test DiscountCodeSystem.Tests
+
+# Run with verbose output
+dotnet test --verbosity normal
+
+# Run specific test method
+dotnet test --filter "TestName"
+```
+
 ## API Protocol
 
 The server uses a custom TCP protocol with binary messages:
