@@ -91,7 +91,8 @@ dotnet restore
    - Test code usage (first use should succeed, second should fail)
 
 ### Testing with xUnit
-- See [Testing the Discount Code System](Docs/Testing%20the%20Discount%20Code%20System.md).
+- See the document [Testing the Discount Code System](Docs/Testing%20the%20Discount%20Code%20System.md) if you want to see how the test project was created and how to run it.
+- See below commands if you want to go stright to testing it already using xUnit tests.
 
    #### From Command Line
 
