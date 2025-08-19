@@ -45,7 +45,7 @@ DiscountCodeSystem/
 ### Cloning the Repository
 
 ```bash
-git clone <your-repo-url>
+git clonehttps://github.com/xmione/DiscountCodeSystem.git
 cd DiscountCodeSystem
 ```
 
