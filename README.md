@@ -195,3 +195,6 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE and MIT License - 
 - Built with .NET 5
 - Uses SQLite for persistent storage
 - Implements a custom TCP protocol
+
+## More related documents:
+["Steps - How this application was created"](Docs\Steps%20-%20How%20this%20application%20was%20created.md)
