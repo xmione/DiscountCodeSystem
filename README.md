@@ -92,7 +92,7 @@ dotnet restore
 
 ### Testing with xUnit
 - See the document [Testing the Discount Code System](Docs/Testing%20the%20Discount%20Code%20System.md) if you want to see how the test project was created and how to run it.
-- See below commands if you want to go stright to testing it already using xUnit tests.
+- See below commands if you want to go straight to testing it already using xUnit tests.
 
    #### From Command Line
 
