@@ -12,9 +12,16 @@ class Program
         
         Console.WriteLine("Testing code generation...");
         Console.Write("Enter number of codes to generate (max 2000): ");
-        var count = ushort.Parse(Console.ReadLine() ?? "10");
+        var input = Console.ReadLine() ?? "10";
+        
+        // Validate input and provide default if empty or invalid
+        if (!ushort.TryParse(input, out ushort count) || count == 0 || count > 2000)
+        {
+            Console.WriteLine("Invalid input. Using default value of 10 codes.");
+            count = 10;
+        }
+        
         await client.TestGenerateCodesAsync("127.0.0.1", 8888, count, 8);
-
         Console.WriteLine("\nEnter a code to test (or press Enter to generate a test code):");
         var code = Console.ReadLine();
         
