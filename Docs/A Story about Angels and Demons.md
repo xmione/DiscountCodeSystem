@@ -17,7 +17,7 @@ In the legendary War in Heaven, the weapons weren’t swords and shields in the 
 
 It is up to you to imagine what really happened in the story. Just get your creativity juices flowing. Imagine the tools they use and how the use it in actuality...tudum...! 😁🤣😂 ![NetflixNetflixAndChillGIF](https://github.com/user-attachments/assets/cc1bf621-e552-4afb-b502-42814b1ccc7f)
 ## My Personal View
-AI is just a tool. Good and evil can use it. I create AI as a tool for goodness.
+AI is just a tool. Good and evil can use it. I create AI as a tool for goodness.😎😇
 
 In the bible, when Cain killed his brother Abel, it did not even mention the tool he used to kill his brother. The story emphasizes more about the first crime committed in history out of pride and jealousy. The morale of the story is, it doesn't matter what tools you used. What matters is the intention and how you use it.
 
