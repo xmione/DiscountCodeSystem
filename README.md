@@ -2,7 +2,7 @@
 
 A TCP-based server for generating and validating discount codes with persistent storage.
 
-📖[A Story about Angels and Demons](#angel-story) <--- Do you want to read a cool story about angels and demons? Click here. 
+📖[A Story about Angels and Demons](#angel-story) <--- Do you want to read a cool story about angels and demons? Click here to view Other related documents. 
 ## Features
 
 - Generate unique random discount codes (7-8 characters)
