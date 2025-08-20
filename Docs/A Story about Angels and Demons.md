@@ -1,4 +1,4 @@
-# 📖A Story about Angles and Demons
+# 📖A Story about Angels and Demons
 ## On to our story...
 In the legendary War in Heaven, the weapons weren’t swords and shields in the earthly sense—they were manifestations of divine power, spiritual authority, and cosmic force. Think less medieval armory, more metaphysical warfare.
 ### ⚔️ Tools Used by Good Angels (Led by Michael)
