@@ -236,5 +236,6 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE and MIT License - 
 
 [A Story about Angles and Demons](Docs/A%20Story%20about%20Angels%20and%20Demons.md)
 <a id="angel-story"></a>
+
 -------------------------------------------------- NOTHING FOLLOWS --------------------------------------------------
 
