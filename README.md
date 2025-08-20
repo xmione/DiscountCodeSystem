@@ -90,7 +90,7 @@ dotnet restore
    ```
 
    The client will:
-   - Prompt you to enter the count or number of concurrent requests, 2000 is the maximum or limit.
+   - Prompt you to enter the count or number of concurrent requests, 2000 is the maximum or limit. Default is 10 when you enter blank or empty.
    - Generate test codes based on the supplied count (8 characters each)
    - Prompt you to enter a code to test
    - Test code usage (first use should succeed, second should fail)
