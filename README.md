@@ -1,7 +1,7 @@
 # Discount Code System
 
 A TCP-based server for generating and validating discount codes with persistent storage.
-
+📖[A Story about Angels and Demons](#angel-story) <--- Do you want to read a cool story about angels and demons? Click here. 
 ## Features
 
 - Generate unique random discount codes (7-8 characters)
@@ -234,6 +234,6 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE and MIT License - 
 [.NET Principles and Design Patterns in Discount Code System](Docs/.NET%20Principles%20and%20Design%20Patterns%20in%20Discount%20Code%20System.md)
 
 [A Story about Angles and Demons](Docs/A%20Story%20about%20Angels%20and%20Demons.md)
-
+<a id="angel-story"></a>
 -------------------------------------------------- NOTHING FOLLOWS --------------------------------------------------
 
