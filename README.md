@@ -30,6 +30,10 @@ DiscountCodeSystem/
 ├── DiscountClient/
 │   ├── Program.cs           # Test client
 │   └── DiscountClient.csproj
+├── DiscountCodeSystem.Tests/
+│   ├── DiscountServiceTests.cs  # Test class
+│   ├── runtests.ps1             # Test runner script
+│   └── DiscountCodeSystem.Tests.csproj
 ├── DiscountCodeSystem.sln   # Solution file
 └── README.md               # This file
 ```
