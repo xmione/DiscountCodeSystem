@@ -15,7 +15,7 @@ In the legendary War in Heaven, the weapons weren’t swords and shields in the 
 #### - Some traditions speak of a divine arsenal, guarded by angels like Virgil and stolen during heavenly civil wars.
 #### This wasn’t a clash of steel—it was a war of will, essence, and allegiance. The battlefield was heaven itself, and the weapons were as vast and mysterious as the beings who wielded them.
 
-It is up to you to imagine what really happened in the story. Just get your creativity juices flowing. Imagine the tools they use and how the use it in actuality...tudum...! 😁🤣😂
+It is up to you to imagine what really happened in the story. Just get your creativity juices flowing. Imagine the tools they use and how the use it in actuality...tudum...! 😁🤣😂 ![NetflixNetflixAndChillGIF](https://github.com/user-attachments/assets/cc1bf621-e552-4afb-b502-42814b1ccc7f)
 ## My Personal View
 AI is just a tool. Good and evil can use it. I create AI as a tool for goodness.
 
