@@ -1,6 +1,7 @@
 # Discount Code System
 
 A TCP-based server for generating and validating discount codes with persistent storage.
+
 📖[A Story about Angels and Demons](#angel-story) <--- Do you want to read a cool story about angels and demons? Click here. 
 ## Features
 
