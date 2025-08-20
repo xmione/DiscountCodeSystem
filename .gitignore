@@ -7,3 +7,4 @@ DiscountServer.Tests/obj
 DiscountCodeSystem.Tests/bin
 DiscountCodeSystem.Tests/obj
 
+DiscountServer/discount_codes.db
